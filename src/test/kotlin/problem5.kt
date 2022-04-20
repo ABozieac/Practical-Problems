@@ -1,14 +1,14 @@
 fun main() {
-    println(getIndex(listOf("A", "B", "C"), "D"))
+    println(getIndex(listOf("A", "B", "C"), "B"))
 }
 
 fun getIndex(list: List<String>, str: String): Int {
     var result = -1
 
-    list.forEachIndexed { index, el ->
-        if (el.equals(str)) {
-            result = index
-            return@forEachIndexed
+    for (i in list.indices) {
+        if (list[i] == str) {
+            result = i
+            break;
         }
     }
 
