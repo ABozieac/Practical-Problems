@@ -1,5 +1,5 @@
 fun main() {
-    println(decapitalizeConst("FOO_BAR"))
+    println(decapitalizeConst("_FOO_BAR_BAZ"))
 }
 
 fun decapitalizeConst(str: String): String {
@@ -7,6 +7,7 @@ fun decapitalizeConst(str: String): String {
 
     var i = 0
     var flag: Boolean
+    var hasDoubleUnderscore = false
 
     while (i != str.length) {
         flag = false
@@ -18,9 +19,12 @@ fun decapitalizeConst(str: String): String {
                     else
                         result += str[j].uppercaseChar()
 
+
                     i = j
                     flag = true
                     break;
+                } else {
+                    hasDoubleUnderscore = true
                 }
             }
         }
@@ -30,6 +34,9 @@ fun decapitalizeConst(str: String): String {
 
         i++
     }
+
+    if (hasDoubleUnderscore)
+        result += "lTH"
 
     return result
 }
