@@ -2,7 +2,7 @@ fun main() {
     println(fizzBuzz(16))
 }
 
-// Example of the output in your document is not correct though :)
+// ok it's correct :c
 fun fizzBuzz(n: Int): List<Any> {
     var result = mutableListOf<Any>()
 
