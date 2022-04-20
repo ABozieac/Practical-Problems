@@ -1,12 +1,11 @@
 fun main() {
-    println(addUpTo(3))
+    println(addUpTo(100))
 }
 
-fun addUpTo(n: Int): Int {
-    var result: Int = 0
+fun addUpTo(n: Int): java.math.BigInteger {
+    var result = java.math.BigInteger("0")
 
-    for (i in 1..n)
-        result += i
+    result += ((((1 + n) * n)) / 2).toBigInteger()
 
     return result
 }
