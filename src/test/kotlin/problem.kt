@@ -1,3 +1,5 @@
+//Comment for commit
+
 fun main() {
     println(capitalizeFirst(listOf("igor", " wojda", "loh")))
 }
