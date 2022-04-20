@@ -5,5 +5,5 @@ fun main() {
 }
 
 fun countUniqueValues(nums: List<Int>): Int {
-    return nums.count() { Collections.frequency(nums, it) == 1 }
+    return nums.distinct().size
 }
