@@ -1,12 +1,14 @@
+import java.math.BigInteger
+
 fun main() {
-    println(power(4, 3))
+    println(power(200000, 200))
 }
 
-fun power(a: Int, b: Int): Int {
-    var result = a
+fun power(a: Int, b: Int): BigInteger {
+    var result = BigInteger("1")
 
     for (i in 2..b)
-        result *= a
+        result *= a.toBigInteger()
 
     return result
 }
