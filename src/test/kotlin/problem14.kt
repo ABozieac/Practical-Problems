@@ -3,11 +3,5 @@ fun main() {
 }
 
 fun product(nums: List<Int>): Int {
-    var result = 1
-
-    for (num in nums) {
-        result *= num
-    }
-
-    return result
+    return nums.reduce() { accumulator, element -> accumulator * element }
 }
