@@ -1,3 +1,4 @@
+//Comment for commit
 fun main() {
     println(printNumber(1))
 }
@@ -5,7 +6,7 @@ fun main() {
 fun printNumber(n: Int): List<Int> {
     var result = mutableListOf<Int>()
 
-    for(i in n downTo 1)
+    for (i in n downTo 1)
         result.add(i)
 
     return result
