@@ -3,5 +3,5 @@ fun main(){
 }
 
 fun containsRange(range1: ClosedRange<Int>, range2: ClosedRange<Int>) : Boolean{
-    return range1.start < range2.start && range1.endInclusive > range2.endInclusive
+    return range1.start <= range2.start && range1.endInclusive >= range2.endInclusive
 }
