@@ -1,3 +1,5 @@
+//Kaizoku ou ni ore wa naruuuuu
+
 fun main() {
     pyramid(4)
 }
