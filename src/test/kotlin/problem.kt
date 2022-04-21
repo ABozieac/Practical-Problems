@@ -1,17 +1,9 @@
 //artiom
 
 fun main() {
-    println(vowels("artiom face teste muhahhhaha"))
+    println(vowels("unadoua"))
 }
 
 fun vowels(str: String): Int {
-    var result = 0
-
-    for (ch in str) {
-        when (ch) {
-            'a', 'e', 'u', 'i', 'o', 'y' -> result++
-        }
-    }
-
-    return result
+    return str.count { it == 'a' || it == 'e' || it == 'u' || it == 'i' || it == 'o' || it == 'y' }
 }
