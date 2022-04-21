@@ -1,16 +1,7 @@
 fun main() {
-    println(getIndex(listOf("A", "B", "C"), "B"))
+    println(getIndex(listOf("A", "B", "C"), "A"))
 }
 
 fun getIndex(list: List<String>, str: String): Int {
-    var result = -1
-
-    for (i in list.indices) {
-        if (list[i] == str) {
-            result = i
-            break;
-        }
-    }
-
-    return result
+    return list.indexOf(str)
 }
