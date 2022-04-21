@@ -1,18 +1,17 @@
 //araraew
 
 fun main() {
-    println(countUpAndDown(5))
+    println(countUpAndDown(0))
 }
 
 fun countUpAndDown(n: Int): List<Int> {
-    var result = mutableListOf<Int>()
+    var result = mutableListOf<Int>(0, 0)
 
-    for (i in 0..n) {
-        result.add(i)
-    }
+    for (i in 1..n) {
+        result.add(i, i)
 
-    for (i in n-1 downTo 0) {
-        result.add(i)
+        if(n != i)
+            result.add(result.size - i, i)
     }
 
     return result
