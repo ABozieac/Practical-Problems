@@ -1,8 +1,12 @@
 //Comment for commit
 fun main() {
-    println(printNumber(1))
+    println(printNumber(5))
 }
 
+/**
+ * Returns a list of integers from n to 1
+ * @param n - the start number
+ */
 fun printNumber(n: Int): List<Int> {
     var result = mutableListOf<Int>()
 
