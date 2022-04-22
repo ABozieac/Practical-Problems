@@ -2,7 +2,7 @@ import java.util.regex.Matcher
 import java.util.regex.Pattern
 
 fun main() {
-    println(decapitalizeConst("__FOO_BAR_BAZ"))
+    println(decapitalizeConst("_foO__bAR_BAZ_TAKE_abc"))
 }
 
 fun decapitalizeConst(str: String): String {
@@ -16,7 +16,7 @@ fun decapitalizeConst(str: String): String {
         else
             result.append(match.value[0].uppercaseChar() + match.value.substring(1, match.value.length).lowercase())
 
-    if ("_{2}".toRegex().containsMatchIn(str))
+    if (!str[0].isLetter())
         result.append("lTH")
 
     return result.toString()
