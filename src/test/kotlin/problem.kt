@@ -1,7 +1,7 @@
 //araraew
 
 fun main() {
-    println(countUpAndDown(0))
+    println(countUpAndDown(5))
 }
 
 fun countUpAndDown(n: Int): List<Int> {
@@ -9,10 +9,11 @@ fun countUpAndDown(n: Int): List<Int> {
 
     for (i in 1..n) {
         result.add(i, i)
-
-        if(n != i)
-            result.add(result.size - i, i)
+        result.add(result.size - i, i)
     }
+
+    if(n != 0)
+        result.remove(n)
 
     return result
 }
