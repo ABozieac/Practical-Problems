@@ -4,6 +4,10 @@ fun main() {
     pyramid(4)
 }
 
+/**
+ * Prints a pyramid
+ * @param n - Numbers of floors
+ */
 fun pyramid(n: Int) {
 
     var j = n - 1
