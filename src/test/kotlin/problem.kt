@@ -8,6 +8,7 @@ fun main() {
 /**
  * Capitalizes every word in a sentence
  * @param str - Sentence to capitalize words
+ * @return String where all words are capitalized
  */
 fun capitalizeSentences(str: String): String {
     var result = StringBuilder()
