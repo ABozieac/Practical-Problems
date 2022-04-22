@@ -1,7 +1,7 @@
 //Test for commit
 
 fun main() {
-    val str = "test?for.. 2my  5 4}function aaaaa AAAAA"
+    val str = " art ar   arawe   "
     println(capitalizeSentences(str))
 }
 
@@ -14,7 +14,8 @@ fun capitalizeSentences(str: String): String {
         else if (str[i].isLetter() && i != 0 && !str[i].isUpperCase())
             result.append(str[i].lowercaseChar())
         else
-            result.append(str[i])
+            if (i - 1 > 0 && str[i - 1] != ' ')
+                result.append(str[i])
     }
 
     return result.toString()
