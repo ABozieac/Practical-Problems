@@ -4,6 +4,11 @@ fun main() {
     println(countUpAndDown(6))
 }
 
+/**
+ * Counts numbers from 0 to n and from n to 0
+ * @param n - Number to count to and from
+ * @return list with integers
+ */
 fun countUpAndDown(n: Int): List<Int> {
     var result = mutableListOf<Int>(0, 0)
 
