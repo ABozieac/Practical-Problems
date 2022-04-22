@@ -2,7 +2,12 @@ fun main() {
     println(fizzBuzz(16))
 }
 
-// ok it's correct :c
+/**
+ * Makes a list of numbers from 1 to n where numbers divided by 3 and 5 are replaced with "FizzBuzz"
+ * numbers divided by 3 with "Fizz" and numbers divded by 5 with "Buzz"
+ * @param n - Number of elements in a list
+ * @return List of any elements
+ */
 fun fizzBuzz(n: Int): List<Any> {
     var result = mutableListOf<Any>()
 
