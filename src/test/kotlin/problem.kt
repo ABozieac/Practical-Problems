@@ -13,15 +13,12 @@ fun formatTrainRoute(stations: List<String>): String {
     var result = "Train is calling at"
 
     stations.forEachIndexed { index, station ->
-        // If only one station add " station"
-        if (index == stations.size - 1 && index == 0)
+        // If only one station add " station" or station before last
+        if (index == stations.size - 1 && index == 0 || index == stations.size - 2)
             result += " $station"
         // Elif last station add " and station"
         else if (index == stations.size - 1)
             result += " and $station"
-        // Elif station before last add " station"
-        else if (index == stations.size - 2)
-            result += " $station"
         // Else separate stations with comma
         else
             result += " $station,"
