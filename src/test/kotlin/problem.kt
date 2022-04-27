@@ -1,6 +1,3 @@
-import java.util.regex.Matcher
-import java.util.regex.Pattern
-
 fun main() {
     println(decapitalizeConst("AA_AA___AAA__BBB"))
 }
