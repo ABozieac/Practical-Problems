@@ -1,7 +1,7 @@
 //Test for commit
 
 fun main() {
-    val str = "aa Aa AA aA"
+    val str = "aa Aa# AA aA"
     println(capitalizeSentences(str))
 }
 
@@ -14,7 +14,7 @@ fun capitalizeSentences(str: String): String {
     val result = StringBuilder()
 
     //Find all words
-    val matches = Regex("[a-z[;.,'\"/?!-]A-Z]+").findAll(str)
+    val matches = Regex("[a-z[^ ]A-Z]+").findAll(str)
 
     for (match in matches){
         result.append(match.value[0].uppercaseChar())
